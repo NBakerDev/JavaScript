@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script src="js/userdetail.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class ="py-3">
+      <table class = "table table-dark";>
+        
+          <tbody id = "tbody">
+           <tr><td>Id: </td><td id = "pid"></td></tr>
+           <tr><td>Name:</td><td id = "pname"></td></tr>
+           <tr><td>Reviewer:</td><td id = "previewer"></td></tr>
+           <tr><td>Admin:</td><td id = padmin></td></tr>
+          </tbody>
+      </table>
+
+     
+      <label>Id:</label>
+      <input id="nbr" type = "number">
+      <button class="button" onclick="buttonClicked();">Click This</button>
+
+      <div class ="mx-auto" style="width: 200px;">
+      <button type="button" class="btn btn-success" onclick="refresh();">Refresh</button>
+      </div>
+  </body>
+</html>
