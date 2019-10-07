@@ -1,16 +1,22 @@
-var subtract = function(){
+let nbr = 0;
+
+var display = () => {
     var currentNbr = document.getElementById("counter");
-    currentNbr.value = (--currentNbr.value);
+    currentNbr.value = nbr;
+}
+
+var subtract = function(){
+    nbr--;
+    display();
     
 
 }
 var add = function(){
-    var currentNbr = document.getElementById("counter");
-    currentNbr.value = (++currentNbr.value);
+    nbr++;
+    display();
     
 
 }
 var loaded = () => {
-    var currentNbr;
-    currentNbr.value = "counter";
+    display()
 }
